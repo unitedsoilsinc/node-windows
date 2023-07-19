@@ -1,6 +1,6 @@
 {
   "name": "node-windows",
-  "version": "1.0.0-beta.8",
+  "version": "1.0.0-beta.8b",
   "description": "Support for Windows services, event logging, UAC, and several helper methods for interacting with the OS.",
   "keywords": [
     "ngn",
@@ -22,11 +22,17 @@
     "yargs": "^17.5.1"
   },
   "readmeFilename": "README.md",
-  "scripts": {},
+  "scripts": {
+    "dist": "npx webpack --config ./webpack.config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/coreybutler/node-windows.git"
   },
   "license": "MIT",
-  "engine": "node >= 0.10.10"
+  "engine": "node >= 0.10.10",
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
 }
